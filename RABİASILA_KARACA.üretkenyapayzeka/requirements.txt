@@ -1,0 +1,14 @@
+# Colab uyumlu temel bağımlılıklar
+# (pywin32 KASITLI olarak yok; sadece local SolidWorks export için opsiyonel)
+
+cadquery==2.4.0
+gradio>=4.44.0
+transformers>=4.44.0
+datasets>=2.20.0
+accelerate>=0.33.0
+sentencepiece>=0.2.0
+torch>=2.2.0
+numpy>=1.26.0,<2.0  # cadquery 2.4.0 numpy 2.x ile uyumsuz (np.bool8 kaldırıldı)
+
+# Opsiyonel (sadece SolidWorks yüklü Windows makinesinde import edilir):
+# pywin32>=306 ; sys_platform == "win32"
